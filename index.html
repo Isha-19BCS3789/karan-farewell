@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#07080c" />
+  <meta name="description" content="Karan.exe — a farewell tribute from Reporting, GS." />
+  <title>Karan.exe — Mission Complete</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <div id="boot" class="boot" role="dialog" aria-label="Karan OS boot sequence">
+    <div class="boot-card">
+      <div class="terminal-top"><span></span><span></span><span></span><b>karan-os — boot</b></div>
+      <div id="bootLines" class="boot-lines" aria-live="polite"></div>
+      <div class="progress"><i id="bootProgress"></i></div>
+      <button id="enterBtn" class="btn primary hidden">Begin farewell protocol <span>↗</span></button>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="#top" class="brand"><span class="brand-mark">K</span><span>Karan.exe</span></a>
+    <div class="nav-links">
+      <a href="#profile">Profile</a>
+      <a href="#memories">Memories</a>
+      <a href="#reactions">System status</a>
+      <a href="#finale">Final message</a>
+    </div>
+    <span class="live-dot">mission complete</span>
+  </nav>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span>REPORTING: GS</span><span>16 JULY 2026</span></p>
+        <h1>Karan<span class="dot">.</span>exe</h1>
+        <p class="hero-sub">One manager. Countless battles. Infinite sarcasm.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#profile">Open personnel file <span>↓</span></a>
+          <button class="btn ghost" id="quoteBtn">Generate Karan response</button>
+        </div>
+        <div id="quoteOutput" class="quote-output">“Interesting choice.”</div>
+      </div>
+      <div class="hero-visual reveal delay-1">
+        <div class="photo-frame">
+          <img src="assets/photos/birthday.jpg" alt="Karan cutting a cake with the team applauding" />
+          <div class="scan-line"></div>
+          <div class="frame-label">
+            <span>SUBJECT: KARAN</span><span>STATUS: IRREPLACEABLE</span>
+          </div>
+        </div>
+        <div class="floating-chip chip-a">TEAM SHIELD <b>LEGENDARY</b></div>
+        <div class="floating-chip chip-b">SARCASM <b>999+</b></div>
+      </div>
+    </section>
+
+    <section id="profile" class="section profile">
+      <div class="section-heading reveal">
+        <p class="eyebrow">PERSONNEL FILE / 01</p>
+        <h2>The manager build<br>nobody can fork.</h2>
+        <p>Smart enough to solve it. Sassy enough to make sure you remember it.</p>
+      </div>
+      <div class="stat-grid">
+        <article class="stat-card reveal"><span>01</span><h3>Tech Fellow</h3><p>Deep technical instincts. Suspiciously fast answers.</p><b>EXPERT MODE</b></article>
+        <article class="stat-card reveal delay-1"><span>02</span><h3>Team Shield</h3><p>Took the difficult rooms, arguments and battles so the team could focus.</p><b>LEGENDARY</b></article>
+        <article class="stat-card reveal delay-2"><span>03</span><h3>Chief Sass Officer</h3><p>Delivered truth, context and comedy in a single sentence.</p><b>999+ XP</b></article>
+        <article class="stat-card reveal"><span>04</span><h3>Calm in Chaos</h3><p>Production on fire? Somehow, still the calmest person in the room.</p><b>P0 READY</b></article>
+      </div>
+
+      <div class="analytics reveal">
+        <div class="analytics-title">
+          <p class="eyebrow">LIVE ANALYTICS</p>
+          <h3>Karan performance monitor</h3>
+        </div>
+        <div class="meters">
+          <div class="meter"><div><span>Problem solving</span><b>100%</b></div><i style="--w:100%"></i></div>
+          <div class="meter"><div><span>Protecting the team</span><b>100%</b></div><i style="--w:100%"></i></div>
+          <div class="meter"><div><span>Sarcasm throughput</span><b>999%</b></div><i style="--w:96%"></i></div>
+          <div class="meter"><div><span>Replacement availability</span><b>0%</b></div><i style="--w:3%"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="memories" class="section memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CACHE / 02</p>
+        <h2>Memories successfully saved.</h2>
+        <p>Birthday patches, cricket deployments, team dinners and absolutely essential ice-cream breaks.</p>
+      </div>
+      <div class="memory-grid">
+        <figure class="memory large reveal" data-caption="The day “Mr. Tech Fellow” became cake-official.">
+          <img src="assets/photos/tech-fellow-cake.jpg" alt="Cake reading Congratulations Mr. Tech Fellow" loading="lazy"><figcaption><span>Achievement unlocked</span><b>Mr. Tech Fellow</b></figcaption>
+        </figure>
+        <figure class="memory tall reveal delay-1" data-caption="Leadership, but make it birthday cake.">
+          <img src="assets/photos/cake-cutting.jpg" alt="Karan cutting a birthday cake" loading="lazy"><figcaption><span>Patch notes</span><b>Another year, still no bugs</b></figcaption>
+        </figure>
+        <figure class="memory reveal delay-2" data-caption="Proof that the team occasionally left Teams.">
+          <img src="assets/photos/team-dinner.jpg" alt="Team dinner" loading="lazy"><figcaption><span>Offsite mode</span><b>All play, some work</b></figcaption>
+        </figure>
+        <figure class="memory wide reveal" data-caption="Turns out leadership extends to the cricket field.">
+          <img src="assets/photos/cricket-team.jpg" alt="Cricket team group photo" loading="lazy"><figcaption><span>Outside production</span><b>Match deployed successfully</b></figcaption>
+        </figure>
+        <figure class="memory reveal delay-1" data-caption="Ice cream: the only approved incident response.">
+          <img src="assets/photos/icecream-2.jpg" alt="Team holding ice cream" loading="lazy"><figcaption><span>Critical ritual</span><b>Chocolate hotfix</b></figcaption>
+        </figure>
+        <figure class="memory tall reveal delay-2" data-caption="The smile of someone who already knows the fix.">
+          <img src="assets/photos/celebration.jpg" alt="Karan at a celebration" loading="lazy"><figcaption><span>Rare footage</span><b>Manager outside a meeting</b></figcaption>
+        </figure>
+        <figure class="memory wide reveal" data-caption="A team is not built in meetings alone.">
+          <img src="assets/photos/team-party.jpg" alt="Team party group photo" loading="lazy"><figcaption><span>Core memory</span><b>Team, cached forever</b></figcaption>
+        </figure>
+        <figure class="memory reveal delay-1" data-caption="One more cake. Zero complaints.">
+          <img src="assets/photos/cake-table.jpg" alt="Karan standing beside a cake table" loading="lazy"><figcaption><span>Recurring event</span><b>Cake-driven development</b></figcaption>
+        </figure>
+        <figure class="memory reveal delay-2" data-caption="No agenda. Just a good team.">
+          <img src="assets/photos/team-selfie.jpg" alt="Team selfie" loading="lazy"><figcaption><span>Snapshot</span><b>People > process</b></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section battle-log">
+      <div class="section-heading reveal">
+        <p class="eyebrow">COMMIT HISTORY / 03</p>
+        <h2>Selected deployments.</h2>
+      </div>
+      <div class="commits reveal">
+        <div><span class="commit-dot"></span><time>INIT</time><p><b>Added Karan to GS</b><small>System stability increased immediately.</small></p><code>+ leadership</code></div>
+        <div><span class="commit-dot"></span><time>ONGOING</time><p><b>Protected team during difficult battles</b><small>Escalations handled. Team focus preserved.</small></p><code>+ shield_mode</code></div>
+        <div><span class="commit-dot"></span><time>ACHIEVEMENT</time><p><b>Tech Fellow unlocked</b><small>Even the cake confirmed it.</small></p><code>+ expertise</code></div>
+        <div><span class="commit-dot warning"></span><time>16 JUL</time><p><b>Karan migration initiated</b><small>Warning: system stability may be reduced.</small></p><code>- karan.exe</code></div>
+      </div>
+    </section>
+
+    <section id="reactions" class="section reactions">
+      <div class="section-heading reveal">
+        <p class="eyebrow">POST-MIGRATION STATUS / 04</p>
+        <h2>The team is handling it<br>extremely professionally.</h2>
+      </div>
+      <div class="reaction-console reveal">
+        <div class="console-bar"><span></span><span></span><span></span><b>gs-team-status.log</b></div>
+        <div class="console-body">
+          <p><i>14:02:11</i> Searching for someone to fight the next battle… <b class="error">NOT FOUND</b></p>
+          <p><i>14:02:14</i> Searching for perfectly timed sarcasm… <b class="error">NOT FOUND</b></p>
+          <p><i>14:02:18</i> Searching for calm during a P0… <b class="error">NOT FOUND</b></p>
+          <p><i>14:02:23</i> Checking team emotional stability… <b class="warn">DEGRADED</b></p>
+          <p><i>14:02:31</i> Attempting replacement search… <b class="error">NO MATCHES</b></p>
+        </div>
+      </div>
+      <div class="bug-card reveal">
+        <div>
+          <p class="eyebrow">INCIDENT GS-0716</p>
+          <h3>Critical process missing: <code>karan.exe</code></h3>
+          <p>Expected behaviour: manager joins, solves problem, protects team, says something sarcastic.</p>
+        </div>
+        <div class="bug-meta"><span>SEVERITY <b>P0</b></span><span>STATUS <b>WON'T FIX</b></span></div>
+        <button id="fixBtn" class="btn danger">Attempt fix</button>
+        <p id="fixOutput" class="fix-output"></p>
+      </div>
+    </section>
+
+    <section class="section video-memory">
+      <div class="section-heading reveal">
+        <p class="eyebrow">VIDEO VAULT / 05</p>
+        <h2>One memory in motion.</h2>
+      </div>
+      <div class="video-shell reveal">
+        <video controls preload="metadata" playsinline>
+          <source src="assets/videos/memory-reel.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section class="section terminal-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">COMMAND LINE / 06</p>
+        <h2>Try talking to the system.</h2>
+        <p>Commands: <code>help</code>, <code>karan</code>, <code>stay</code>, <code>goodbye</code>, <code>thankyou</code>, <code>sarcasm</code>.</p>
+      </div>
+      <div class="interactive-terminal reveal">
+        <div class="console-bar"><span></span><span></span><span></span><b>gs@farewell:~</b></div>
+        <div id="terminalOutput" class="terminal-output">
+          <p>Welcome to Karan OS. Type <b>help</b> to continue.</p>
+        </div>
+        <form id="terminalForm">
+          <label>&gt;</label><input id="terminalInput" autocomplete="off" aria-label="Terminal command" placeholder="type a command..." />
+        </form>
+      </div>
+    </section>
+
+    <section id="finale" class="section finale">
+      <div class="finale-inner reveal">
+        <p class="eyebrow">FINAL DEPLOYMENT / 07</p>
+        <h2>Some managers manage work.<br><span>You built a team.</span></h2>
+        <p>Thank you for every battle you fought, every impossible conversation you took on, every lesson, every laugh and every time you had our backs.</p>
+        <div class="final-checks">
+          <span>Leadership saved <b>✓</b></span><span>Memories cached <b>✓</b></span><span>Sarcasm archived <b>✓</b></span><span>Team impact permanent <b>✓</b></span>
+        </div>
+        <button id="lastThingBtn" class="btn primary big">One last thing…</button>
+      </div>
+    </section>
+
+    <section id="videoFinale" class="video-finale" aria-hidden="true">
+      <button id="closeFinale" class="close-finale" aria-label="Close video">×</button>
+      <div class="pre-video" id="preVideo">
+        <p>Even if nothing is going right…</p>
+        <h2>just say…</h2>
+      </div>
+      <video id="finalVideo" playsinline controls>
+        <source src="assets/videos/final-line.mp4" type="video/mp4">
+      </video>
+      <div class="after-video" id="afterVideo">
+        <p>Once Reporting: GS.<br><b>Always Team GS.</b></p>
+        <span>Connection lost. Memories cached forever.</span>
+      </div>
+      <canvas id="confetti"></canvas>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightboxClose" aria-label="Close image">×</button>
+    <img id="lightboxImg" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <footer><span>Karan.exe</span><span>Made with admiration, inside jokes and a minor emotional outage.</span><span>GS · 16.07.2026</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
